@@ -2,7 +2,7 @@ module.exports = {
 	paths: {
 		html: {
 			inline: {
-				src: [ 'src/templates/**/*.html' ],
+				src: [ 'src/**/*.html' ],
 				dest: [ 'dist' ],
 			},
 			clean: {
@@ -34,7 +34,7 @@ module.exports = {
 		watch: {
 			src: [
 				'src/sass/**/*.scss',
-				'src/templates/**/*.html',
+				'src/**/*.html',
 			],
 		},
 		assets: {
