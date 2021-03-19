@@ -54,7 +54,7 @@
 		width: 100% !important;
 	}
 
-	td {
+	.td-adaptive {
 		@media (max-width: $breakpoint-mobile) {
 			width: 100% !important;
 			display: block;

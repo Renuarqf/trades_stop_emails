@@ -1,8 +1,29 @@
-@import '../settings';
 @import 'variables';
+@import '../settings';
 
 img {
   display: block;
   max-width: 100%;
 }
+.main-email-bg {
+  background: $main-bg-color;
+}
 
+p {
+  margin: 0;
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+.table-full-width {
+  width: 100%;
+}
+
+.button {
+  border-radius: $border-radius;
+  td {
+    border-radius: $border-radius;
+  }
+}

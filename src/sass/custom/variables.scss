@@ -1,15 +1,46 @@
 //sizes
-$grid-container-width: 640px;
+$grid-container-width: 600px;
+$grid-gutter: 10px;
 
 //fonts
-$font-size-base: 16px;
-$line-height-base: 23px;
-$font-family-base: 'Verdana', 'Helvetica', sans-serif;
+$font-size-base: 13px;
+$line-height-base: 18px;
+$font-family-base: Verdana, 'Helvetica', sans-serif;
 
 
 //colors
-$text-color: #333333;
-$white: #ffffff;
+$text-color: #242F35;
+$white: #FFFFFF;
+$link-color: #008CF9;
+$grey-color: #80888E;
+$main-bg-color: #F8F8FA;
+$grey-text: #DDDDE3;
 
+$button-default-background-color: #E5E8F4;
+$button-default-text-color: $link-color;
 
 $page-background-color: $white;
+
+
+$color-white: #FFFFFF;
+$color-black: #242F35;
+$color-gray: #80888E;
+$color-blue: #008CF9;
+$separator-color: #dddddd;
+
+$colors: (
+  'white': $color-white,
+  'black': $color-black,
+  'gray': $color-gray,
+  'blue': $color-blue,
+  'grey-2': $grey-text,
+) !default;
+
+
+$page-vertical-spacing: 0;
+$page-vertical-spacing: 0;
+$page-vertical-spacing-mobile: 0;
+$page-vertical-spacing-mobile: 0;
+
+$border-radius: 10px;
+

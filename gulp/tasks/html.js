@@ -3,6 +3,7 @@ var htmlmin = require( 'gulp-htmlmin' );
 var connect = require( 'gulp-connect' );
 var es = require( 'event-stream' );
 var juiceFn = require( 'juice' ).juiceResources;
+var prettyHtml = require('gulp-pretty-html');
 
 // Require main configuration file
 var config = require( '../config.js' );
@@ -48,6 +49,7 @@ function inline() {
 function clean() {
 	return gulp.src( config.paths.html.clean.src )
 		.pipe( htmlmin( config.paths.html.clean.options ) )
+		.pipe(prettyHtml())
 		.pipe( gulp.dest( config.paths.html.clean.dest ) )
 		.pipe( connect.reload() );
 }

@@ -43,7 +43,7 @@ function prompt( callback ) {
 						return true;
 					}
 				}
-			 ] )
+			] )
 				.then( function( result ) {
 					nextVersion = result.version;
 					callback();

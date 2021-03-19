@@ -28,6 +28,7 @@
     "gulp-connect": "^5.7.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-pretty-html": "^2.0.10",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-stylelint": "^13.0.0",
