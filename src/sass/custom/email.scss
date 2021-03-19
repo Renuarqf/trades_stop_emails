@@ -116,14 +116,14 @@
 
 .social-link {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   margin-right: 25px;
 
   img {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -161,8 +161,16 @@
   margin: 0 0 15px;
   border-radius: $border-radius;
 
+  &.item-last {
+    margin-bottom: 0;
+  }
+
   & > tr > td {
-    padding: 15px 20px;
+    padding: 10px 20px 15px;
+
+    &.no-padding-bottom {
+      padding-bottom: 0;
+    }
   }
   .price {
     font-size: 18px;
@@ -170,7 +178,12 @@
     font-weight: bold;
     color: $text-color;
     text-align: right;
-    padding: 0 0 10px;
+    padding: 5px 0 10px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 16px !important;
+      line-height: 16px !important;
+    }
   }
   .price-value {
     font-size: 13px;
@@ -182,6 +195,7 @@
   .item__head--block {
     display: inline-block;
     vertical-align: top;
+    padding-right: 10px;
   }
   .item__link-main {
     display: inline-block;
@@ -190,6 +204,30 @@
     font-weight: bold;
     color: $color-blue;
     margin: 0 0 10px;
+    max-width: 100%;
+    word-break: break-word;
+    padding-top: 5px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 16px !important;
+      line-height: 16px !important;
+    }
+  }
+  .item__status {
+    display: inline-block;
+    height: 29px;
+    width: auto;
+    margin-bottom: 15px;
+
+    img {
+      display: block;
+      height: 29px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      img {
+        height: 29px !important;
+      }
+    }
   }
   .item__subinfo {
     display: block;
@@ -200,6 +238,10 @@
   }
   .item__td-list {
     border-bottom: 1px solid $separator-color;
+
+    &.no-border {
+      border: none;
+    }
   }
   .item__footer {
     font-size: 13px;
