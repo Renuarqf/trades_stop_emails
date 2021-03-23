@@ -1,10 +1,14 @@
 @import 'variables';
 @import '../settings';
 
-img {
-  display: block;
-  max-width: 100%;
+a, body, button, div, form, html, img, label, span, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 .main-email-bg {
   background: $main-bg-color;
 }
@@ -30,4 +34,8 @@ p {
 
 .no-padding-bottom {
   padding-bottom: 0;
+}
+
+.img-table {
+  margin: 0;
 }

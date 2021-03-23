@@ -15,26 +15,33 @@
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
+
+  table > tr > td {
+    line-height: 28px;
+    vertical-align: middle;
+  }
 }
 
 .logo {
   $logo-w: 166px;
   $logo-h: 28px;
-  display: block;
   width: $logo-w;
   height: $logo-h;
 
   img {
-    display: block;
+    border: 0;
     width: $logo-w;
     height: $logo-h;
+    outline: none;
+    vertical-align: middle;
   }
 }
 
 .date {
   font-size: 12px;
-  line-height: 20px;
+  line-height: 28px;
   color: $grey-color;
+  vertical-align: middle;
 }
 
 
@@ -81,11 +88,13 @@
   width: 135px;
   height: 40px;
   margin-bottom: 10px;
+  vertical-align: baseline;
 
   img {
     display: block;
     width: 135px;
     height: 40px;
+    vertical-align: baseline;
   }
   @media (max-width: $breakpoint-mobile) {
     margin-right: 20px;
@@ -96,17 +105,17 @@
 .footer__item {
   display: block;
   width: 100%;
-  padding: 0 0 20px;
   font-size: 12px;
   line-height: 15px;
+  margin: 0 0 20px;
 
   .footer__title {
     display: block;
-    padding: 0 0 15px;
     font-size: 13px;
     line-height: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0 0 10px;
   }
 
   &.no-padding-bottom {
@@ -132,7 +141,8 @@
   font-size: 18px;
   line-height: 22px;
   color: $color-black;
-  padding: 0 0 30px;
+  padding: 0;
+  margin: 0 0 30px;
 }
 
 .table-list {
@@ -140,23 +150,52 @@
     padding-bottom: 50px;
   }
 }
+.title-img__table {
+  width: 24px;
+  height: 24px;
+
+  td {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.table__title--wrap {
+  td {
+    padding-bottom: 15px;
+    text-align: left;
+  }
+}
 
 .table__title {
-  display: block;
   vertical-align: middle;
   font-size: 17px;
   line-height: 21px;
   color: $text-color;
   font-weight: bold;
-  padding: 0 0 15px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
   img {
     display: inline-block;
     width: 20px;
     height: 20px;
+    vertical-align: middle;
+  }
+  span {
+    vertical-align: middle;
   }
 }
+.item-icon-table {
+  width: 24px;
+  height: 24px;
 
+  td {
+    width: 24px;
+    height: 24px;
+  }
+}
 .item {
   margin: 0 0 15px;
   border-radius: $border-radius;
@@ -178,7 +217,8 @@
     font-weight: bold;
     color: $text-color;
     text-align: right;
-    padding: 5px 0 10px;
+    padding: 0;
+    margin: 5px 0 10px;
 
     @media (max-width: $breakpoint-mobile) {
       font-size: 16px !important;
@@ -186,11 +226,12 @@
     }
   }
   .price-value {
+    display: block;
     font-size: 13px;
     line-height: 13px;
     color: $color-gray;
     text-align: right;
-    padding: 0 0 10px;
+    padding: 1px 0 10px;
   }
   .item__head--block {
     display: inline-block;
@@ -198,7 +239,7 @@
     padding-right: 10px;
   }
   .item__link-main {
-    display: inline-block;
+    display: block;
     font-size: 18px;
     line-height: 18px;
     font-weight: bold;
@@ -231,10 +272,11 @@
   }
   .item__subinfo {
     display: block;
+    width: 100%;
     font-size: 13px;
     line-height: 13px;
     color: $color-gray;
-    padding: 0 0 15px;
+    padding: 1px 0 15px;
   }
   .item__td-list {
     border-bottom: 1px solid $separator-color;
@@ -260,6 +302,7 @@
   .item__list--td-icon {
     width: 34px;
     vertical-align: top;
+
     img {
       width: 24px;
       height: 24px;
