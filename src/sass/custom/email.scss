@@ -185,18 +185,14 @@
 
   td {
     font-size: 17px;
-    line-height: 24px;
+    line-height: 25px;
     color: $text-color;
     font-weight: bold;
     vertical-align: top;
   }
-
-  .table__title-td-value {
-    padding-left: 5px;
-  }
   .table__title-td__image {
-    width: 20px;
-    padding-top: 2px;
+    width: 26px;
+    padding-top: 3px;
   }
 
   img {
@@ -242,8 +238,8 @@
     margin: 5px 0 10px;
 
     @media (max-width: $breakpoint-mobile) {
-      font-size: 16px !important;
-      line-height: 16px !important;
+      font-size: 15px !important;
+      line-height: 15px !important;
     }
   }
   .price-value {
@@ -253,6 +249,11 @@
     color: $color-gray;
     text-align: right;
     padding: 1px 0 10px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 12px !important;
+      line-height: 12px !important;
+    }
   }
   .item__head--block {
     display: inline-block;
@@ -280,8 +281,8 @@
     word-break: break-word;
 
     @media (max-width: $breakpoint-mobile) {
-      font-size: 16px !important;
-      line-height: 16px !important;
+      font-size: 15px !important;
+      line-height: 15px !important;
     }
   }
   .item__status {
@@ -307,6 +308,11 @@
     line-height: 13px;
     color: $color-gray;
     padding: 1px 0 5px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 12px !important;
+      line-height: 12px !important;
+    }
   }
   .item__td-list {
     border-bottom: 1px solid $separator-color;
