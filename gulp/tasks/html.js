@@ -50,6 +50,6 @@ function clean() {
 	return gulp.src( config.paths.html.clean.src )
 		.pipe( htmlmin( config.paths.html.clean.options ) )
 		.pipe(prettyHtml())
-		.pipe( gulp.dest( config.paths.html.clean.dest ) )
+		// .pipe( gulp.dest( config.paths.html.clean.dest ) )
 		.pipe( connect.reload() );
 }
