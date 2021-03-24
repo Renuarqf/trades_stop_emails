@@ -351,3 +351,9 @@
     padding: 4px 0 16px;
   }
 }
+
+.table-colums {
+  & > tr > td {
+    vertical-align: top;
+  }
+}
