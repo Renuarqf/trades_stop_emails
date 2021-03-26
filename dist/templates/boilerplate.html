@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; border: 0; font: inherit; vertical-align: baseline; width: 100%; height: 100%; margin: 0; padding: 0; background: #fff; font-family: Verdana,'Helvetica',sans-serif;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Bojler - Boilerplate</title>
+
+		<!--[if gte mso 15]>
+		<style type="text/css">
+			table {
+				font-size: 1px;
+				line-height: 0;
+				mso-margin-top-alt: 1px;
+				mso-line-height-rule: exactly;
+			}
+			* {
+				mso-line-height-rule: exactly;
+			}
+		</style>
+		<![endif]-->
+
+		<!--[if mso]>
+		<style type="text/css">
+			body,
+			table,
+			td {
+				font-family: Arial, Helvetica, sans-serif !important;
+			}
+		</style>
+		<![endif]-->
+
+		<!--[if gte mso 9]>
+		<xml>
+			<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->
+
+		<style>
+			/**
+			 * 1. Removing auto-generated blue links on Apple devices.
+			 *    More info: http://removebluelinks.com
+			 * 2. Force Outlook to provide a "View in browser" menu link.
+			 * 3. Yahoo! Mail has a knack for picking keywords in emails and linking them to
+			 *    advertising popups (blue, dotted links). This is how we remove them.
+			 * 4. Force Hotmail to display normal line spacing.
+			 *    More info: http://www.emailonacid.com/forum/viewthread/43
+			 * 5. Force Hotmail to display emails at full width.
+			 */
+
+			a[x-apple-data-detectors] {
+				/* 1 */
+				color: inherit !important;
+				text-decoration: none !important;
+				font-size: inherit !important;
+				font-family: inherit !important;
+				font-weight: inherit !important;
+				line-height: inherit !important;
+			}
+
+			#outlook a {
+				padding: 0; /* 2 */
+			}
+
+			.yshortcuts a {
+				border-bottom: none !important; /* 3 */
+			}
+
+			.ExternalClass {
+				line-height: 100%; /* 4 */
+			}
+
+			.ExternalClass,
+			.ExternalClass p,
+			.ExternalClass span,
+			.ExternalClass font,
+			.ExternalClass td,
+			.ExternalClass div {
+				width: 100%; /* 5 */
+			}
+		</style>
+
+		<style>
+.table__store-link td {
+  text-align: right;
+  padding-bottom: 10px;
+}
+.store-link {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  vertical-align: baseline;
+}
+.store-link img {
+  display: block;
+  width: 135px;
+  height: 40px;
+  vertical-align: baseline;
+}
+.social-link {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.social-link img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+.item .item__link-main-td {
+  padding-top: 5px;
+}
+.item .item__link-main {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #008CF9;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  word-break: break-word;
+}
+@media (max-width: 620px) {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .main-wrapper__inner {
+    padding-top: 0 !important;
+    padding-right: 0;
+    padding-bottom: 0 !important;
+    padding-left: 0;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  .container .td-adaptive {
+    width: 100% !important;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .column-1 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-2 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-3 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-4 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-5 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-6 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-7 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-8 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-9 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-11 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-12 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .hero {
+    height: auto !important;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .hero__inner {
+    height: auto !important;
+  }
+
+  .hero__inner>table {
+    width: 100% !important;
+  }
+
+  .block\:sm,
+.block\@sm,
+.block-sm {
+    display: block !important;
+  }
+
+  .table\:sm,
+.table\@sm,
+.table-sm {
+    display: table !important;
+  }
+
+  .table-row\:sm,
+.table-row\@sm,
+.table-row-sm {
+    display: table-row !important;
+  }
+
+  .table-cell\:sm,
+.table-cell\@sm,
+.table-cell-sm {
+    display: table-cell !important;
+  }
+
+  .hidden\:sm,
+.hidden\@sm,
+.hidden-sm {
+    display: none !important;
+  }
+
+  .text-left\:sm,
+.text-left\@sm,
+.text-left-sm {
+    text-align: left !important;
+  }
+
+  .text-center\:sm,
+.text-center\@sm,
+.text-center-sm {
+    text-align: center !important;
+  }
+
+  .text-right\:sm,
+.text-right\@sm,
+.text-right-sm {
+    text-align: right !important;
+  }
+
+  .p-0\:sm,
+.p-0\@sm,
+.p-0-sm {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .pt-0\:sm,
+.pt-0\@sm,
+.pt-0-sm {
+    padding-top: 0 !important;
+  }
+
+  .pr-0\:sm,
+.pr-0\@sm,
+.pr-0-sm {
+    padding-right: 0 !important;
+  }
+
+  .pb-0\:sm,
+.pb-0\@sm,
+.pb-0-sm {
+    padding-bottom: 0 !important;
+  }
+
+  .pl-0\:sm,
+.pl-0\@sm,
+.pl-0-sm {
+    padding-left: 0 !important;
+  }
+
+  .px-0\:sm,
+.px-0\@sm,
+.px-0-sm {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .py-0\:sm,
+.py-0\@sm,
+.py-0-sm {
+    padding-vertical: 0 !important;
+  }
+
+  .p-1\:sm,
+.p-1\@sm,
+.p-1-sm {
+    padding-top: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  .pt-1\:sm,
+.pt-1\@sm,
+.pt-1-sm {
+    padding-top: 10px !important;
+  }
+
+  .pr-1\:sm,
+.pr-1\@sm,
+.pr-1-sm {
+    padding-right: 10px !important;
+  }
+
+  .pb-1\:sm,
+.pb-1\@sm,
+.pb-1-sm {
+    padding-bottom: 10px !important;
+  }
+
+  .pl-1\:sm,
+.pl-1\@sm,
+.pl-1-sm {
+    padding-left: 10px !important;
+  }
+
+  .px-1\:sm,
+.px-1\@sm,
+.px-1-sm {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  .py-1\:sm,
+.py-1\@sm,
+.py-1-sm {
+    padding-vertical: 10px !important;
+  }
+
+  .mx-auto\:sm,
+.mx-auto\@sm,
+.mx-auto-sm {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .mx-0\:sm,
+.mx-0\@sm,
+.mx-0-sm {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .mx-1\:sm,
+.mx-1\@sm,
+.mx-1-sm {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .main-td-head {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .main-td-body {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .main-td-footer {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .main-td-footer .main-td-footer-bottom .is-first {
+    padding-left: 0 !important;
+  }
+
+  .main-td-footer .main-td-footer-bottom .is-last {
+    padding-right: 0 !important;
+  }
+
+  .table__store-link,
+.table__store-link tbody {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 10px !important;
+  }
+
+  .table__store-link tr {
+    display: block !important;
+  }
+
+  .table__store-link td {
+    display: block !important;
+    margin-right: 20px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .item .price {
+    font-size: 15px !important;
+    line-height: 15px !important;
+  }
+
+  .item .price-value {
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+
+  .item .item__link-main {
+    font-size: 15px !important;
+    line-height: 15px !important;
+  }
+
+  .item .item__status img {
+    height: 29px !important;
+  }
+
+  .item .item__subinfo {
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+}
+</style>
+	</head>
+	<body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; border: 0; font: inherit; vertical-align: baseline; width: 100%; height: 100%; margin: 0; padding: 0; background: #fff; font-family: Verdana,'Helvetica',sans-serif;">
+		<table class="main-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; background: #fff; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; width: 100%; height: 100%; line-height: 100%;">
+			<tr>
+				<td class="main-wrapper__inner" align="left" valign="top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 0; padding-bottom: 0; font-family: Verdana,'Helvetica',sans-serif;">
+					<table class="container bg-white" width="660" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 600px; margin: 0 auto 0 auto; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+						<tr>
+							<td class="column-12 is-first is-last" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; width: 600px; padding-left: 10px; padding-right: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+								Hello World!<br>
+								<img src="assets/images/example.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+							</img></br></td><!-- /.column -->
+						</tr>
+					</table><!-- /.container -->
+				</td><!-- /.main-wrapper__inner -->
+			</tr>
+		</table><!-- /.main-wrapper -->
+	</body>
+</html>

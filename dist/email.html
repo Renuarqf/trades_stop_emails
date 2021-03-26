@@ -1,0 +1,1547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+		"http: //www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd;">
+<html xmlns="http://www.w3.org/1999/xhtml" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; border: 0; font: inherit; vertical-align: baseline; width: 100%; height: 100%; margin: 0; padding: 0; background: #fff; font-family: Verdana,'Helvetica',sans-serif;">
+	<head>
+		<meta http-equiv="Content-Type;" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="X-UA-Compatible;" content="IE=edge;"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Bojler - Boilerplate</title>
+
+		<!--[if gte mso 15]>
+		<style type="text/css">
+			table {
+				font-size: 1px;
+				line-height: 0;
+				mso-margin-top-alt: 1px;
+				mso-line-height-rule: exactly;
+			}
+
+			* {
+				mso-line-height-rule: exactly;
+			}
+		</style>
+		<![endif]-->
+
+		<!--[if mso]>
+		<style type="text/css">
+			body,
+			table,
+			td {
+				font-family: Verdana, Arial, Helvetica, sans-serif !important;
+			}
+		</style>
+		<![endif]-->
+
+		<!--[if gte mso 9]>
+		<xml>
+			<o: OfficeDocumentSettings>
+				<o: AllowPNG/>
+				<o: PixelsPerInch>96</o: PixelsPerInch>
+			</o: OfficeDocumentSettings>
+		</xml>
+		<![endif]-->
+
+		<style>
+			/**
+			 * 1. Removing auto-generated blue links on Apple devices.
+			 *    More info:  http: //removebluelinks.com
+			 * 2. Force Outlook to provide a "View in browser" menu link.
+			 * 3. Yahoo! Mail has a knack for picking keywords in emails and linking them to
+			 *    advertising popups (blue, dotted links). This is how we remove them.
+			 * 4. Force Hotmail to display normal line spacing.
+			 *    More info:  http: //www.emailonacid.com/forum/viewthread/43
+			 * 5. Force Hotmail to display emails at full width.
+			 */
+
+			a[x-apple-data-detectors] {
+				/* 1 */
+				color: inherit !important;
+				text-decoration: none !important;
+				font-size: inherit !important;
+				font-family: inherit !important;
+				font-weight: inherit !important;
+				line-height: inherit !important;
+			}
+
+			#outlook a {
+				padding: 0; /* 2 */
+			}
+
+			.yshortcuts a {
+				border-bottom: none !important; /* 3 */
+			}
+
+			.ExternalClass {
+				line-height: 100%; /* 4 */
+			}
+
+			.ExternalClass,
+			.ExternalClass p,
+			.ExternalClass span,
+			.ExternalClass font,
+			.ExternalClass td,
+			.ExternalClass div {
+				width: 100%; /* 5 */
+			}
+		</style>
+
+		<style>
+.table__store-link td {
+  text-align: right;
+  padding-bottom: 10px;
+}
+.store-link {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  vertical-align: baseline;
+}
+.store-link img {
+  display: block;
+  width: 135px;
+  height: 40px;
+  vertical-align: baseline;
+}
+.social-link {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.social-link img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+.item .item__link-main-td {
+  padding-top: 5px;
+}
+.item .item__link-main {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #008CF9;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  word-break: break-word;
+}
+@media (max-width: 620px) {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .main-wrapper__inner {
+    padding-top: 0 !important;
+    padding-right: 0;
+    padding-bottom: 0 !important;
+    padding-left: 0;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  .container .td-adaptive {
+    width: 100% !important;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .column-1 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-2 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-3 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-4 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-5 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-6 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-7 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-8 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-9 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-11 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .column-12 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .hero {
+    height: auto !important;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .hero__inner {
+    height: auto !important;
+  }
+
+  .hero__inner>table {
+    width: 100% !important;
+  }
+
+  .block\:sm,
+.block\@sm,
+.block-sm {
+    display: block !important;
+  }
+
+  .table\:sm,
+.table\@sm,
+.table-sm {
+    display: table !important;
+  }
+
+  .table-row\:sm,
+.table-row\@sm,
+.table-row-sm {
+    display: table-row !important;
+  }
+
+  .table-cell\:sm,
+.table-cell\@sm,
+.table-cell-sm {
+    display: table-cell !important;
+  }
+
+  .hidden\:sm,
+.hidden\@sm,
+.hidden-sm {
+    display: none !important;
+  }
+
+  .text-left\:sm,
+.text-left\@sm,
+.text-left-sm {
+    text-align: left !important;
+  }
+
+  .text-center\:sm,
+.text-center\@sm,
+.text-center-sm {
+    text-align: center !important;
+  }
+
+  .text-right\:sm,
+.text-right\@sm,
+.text-right-sm {
+    text-align: right !important;
+  }
+
+  .p-0\:sm,
+.p-0\@sm,
+.p-0-sm {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .pt-0\:sm,
+.pt-0\@sm,
+.pt-0-sm {
+    padding-top: 0 !important;
+  }
+
+  .pr-0\:sm,
+.pr-0\@sm,
+.pr-0-sm {
+    padding-right: 0 !important;
+  }
+
+  .pb-0\:sm,
+.pb-0\@sm,
+.pb-0-sm {
+    padding-bottom: 0 !important;
+  }
+
+  .pl-0\:sm,
+.pl-0\@sm,
+.pl-0-sm {
+    padding-left: 0 !important;
+  }
+
+  .px-0\:sm,
+.px-0\@sm,
+.px-0-sm {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .py-0\:sm,
+.py-0\@sm,
+.py-0-sm {
+    padding-vertical: 0 !important;
+  }
+
+  .p-1\:sm,
+.p-1\@sm,
+.p-1-sm {
+    padding-top: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  .pt-1\:sm,
+.pt-1\@sm,
+.pt-1-sm {
+    padding-top: 10px !important;
+  }
+
+  .pr-1\:sm,
+.pr-1\@sm,
+.pr-1-sm {
+    padding-right: 10px !important;
+  }
+
+  .pb-1\:sm,
+.pb-1\@sm,
+.pb-1-sm {
+    padding-bottom: 10px !important;
+  }
+
+  .pl-1\:sm,
+.pl-1\@sm,
+.pl-1-sm {
+    padding-left: 10px !important;
+  }
+
+  .px-1\:sm,
+.px-1\@sm,
+.px-1-sm {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  .py-1\:sm,
+.py-1\@sm,
+.py-1-sm {
+    padding-vertical: 10px !important;
+  }
+
+  .mx-auto\:sm,
+.mx-auto\@sm,
+.mx-auto-sm {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .mx-0\:sm,
+.mx-0\@sm,
+.mx-0-sm {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .mx-1\:sm,
+.mx-1\@sm,
+.mx-1-sm {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .main-td-head {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .main-td-body {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .main-td-footer {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .main-td-footer .main-td-footer-bottom .is-first {
+    padding-left: 0 !important;
+  }
+
+  .main-td-footer .main-td-footer-bottom .is-last {
+    padding-right: 0 !important;
+  }
+
+  .table__store-link,
+.table__store-link tbody {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 10px !important;
+  }
+
+  .table__store-link tr {
+    display: block !important;
+  }
+
+  .table__store-link td {
+    display: block !important;
+    margin-right: 20px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .item .price {
+    font-size: 15px !important;
+    line-height: 15px !important;
+  }
+
+  .item .price-value {
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+
+  .item .item__link-main {
+    font-size: 15px !important;
+    line-height: 15px !important;
+  }
+
+  .item .item__status img {
+    height: 29px !important;
+  }
+
+  .item .item__subinfo {
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+}
+</style>
+	</head>
+	<body class="bg-white" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; border: 0; font: inherit; vertical-align: baseline; width: 100%; height: 100%; margin: 0; padding: 0; background: #fff; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;">
+	<table class="main-wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; background: #fff; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; width: 100%; height: 100%; line-height: 100%;">
+		<tr>
+			<td class="main-wrapper__inner image-reset" align="left" valign="left" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding-top: 0; padding-bottom: 0; font-family: Verdana,'Helvetica',sans-serif;">
+				<table class="container bg-white head-shadow" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 600px; margin: 0 auto 0 auto; position: relative; box-shadow: 0 0 10px rgba(0,0,0,0.1); z-index: 5; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+					<tr>
+						<td class="main-td-head" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 16px 20px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<p style="margin: 0;">
+											<a href="#" class="logo image-reset" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; font-size: 100%; line-height: 100%;">
+												<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/logo.png" width="166" height="28" alt="Logotype" style="text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; font: inherit; vertical-align: baseline; border: 0; width: 166px; height: 28px; outline: none;"/>
+											</a>
+										</p>
+									</td>
+									<td class="text-right" style="font-size: 13px; line-height: 18px; border-collapse: collapse; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right">
+										<span class="date" style="margin: 0; padding: 0; border: 0; font: inherit; font-size: 12px; line-height: 14px; color: #80888E; vertical-align: middle;">March 5, 2021</span>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table> <!-- container main-head -->
+			</td>
+		</tr>
+		<tr>
+			<td class="main-wrapper__inner" align="left" valign="left" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 0; padding-bottom: 0; font-family: Verdana,'Helvetica',sans-serif;">
+				<table class="container main-email-bg" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 600px; margin: 0 auto 0 auto; background: #F8F8FA; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+					<tr>
+						<td class="main-td-body" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 30px 10px 0; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+							<table class="table-full-width" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<p class="welcome" style="display: block; font-size: 18px; line-height: 22px; color: #242F35; padding: 0; margin: 0 0 30px;">Hello, John! How are you today?</p>
+									</td>
+								</tr>
+							</table>
+
+							<!-- Expiring Soon Options -->
+							<table class="table-full-width table-list" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-12 pb-15" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table__title" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="table__title-td__image image-reset" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; width: 26px; padding-top: 3px; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/icon-expiring-soon-options.png" alt="icon" width="20" height="20" style="-ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; outline: 0; text-decoration: none; width: 20px; height: 20px; vertical-align: top;"/>
+												</td>
+												<td class="table__title-td-value" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													Expiring Soon Options
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!-- item -->
+										<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+											<tr>
+												<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+													<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td class="item__td-main vertical-top image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																	<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																		<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																			<tr>
+																				<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">AAPL210122C00065000</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">AAPL $65 22Jan21 Calls</span>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																	<div class="item__status" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; display: inline-block; height: 29px; width: auto; margin-bottom: 15px;">
+																		<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/status-in-the-money.png" alt="status-in" height="29" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; display: block; height: 29px;"/>
+																	</div>
+																</div>
+															</td>
+															<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																	<b>$38.55</b>
+																</p>
+																<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__td-list" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; border-bottom: 1px solid #ddd; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="item__list" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Option_will_expire.png" width="24" height="24" alt="icon" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Expires on <b>03/19/2021</b></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																1 contract in
+																<a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">portfolio test</a>, 1 contract in
+																<a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">xx1113</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- end item -->
+
+										<!-- item -->
+										<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+											<tr>
+												<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+													<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td class="item__td-main vertical-top image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																	<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																		<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																			<tr>
+																				<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">CSCO210122C00035000</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">CSCO $35 22Jan21 Calls</span>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																	<div class="item__status" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; display: inline-block; height: 29px; width: auto; margin-bottom: 15px;">
+																		<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/status-out-of-the-money.png" alt="status-out" height="29" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; display: block; height: 29px;"/>
+																	</div>
+																</div>
+															</td>
+															<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																	<b>$9.89</b>
+																</p>
+																<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__td-list" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; border-bottom: 1px solid #ddd; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="item__list" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Stock_Split.png" alt="icon" width="24" height="24" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Position was added <span class="text-gray" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #80888E;">(30 shares at $25.00)</span></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																1 contract in
+																<a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Portfolio</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- end item -->
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 50px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!--[if mso]>
+											<table>
+												<tr>
+													<td height="10"></td>
+												</tr>
+											</table>
+										<![endif]-->
+										<table class="button button--full-width" border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td style="font-size: 13px; border-collapse: collapse; line-height: 100%; background-color: #E5E8F4; padding-top: 15px; padding-right: 35px; padding-bottom: 15px; padding-left: 35px; text-align: center; border-radius: 10px; font-family: Verdana,'Helvetica',sans-serif;" bgcolor="#E5E8F4" align="center">
+													<a href="#" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #008CF9; text-decoration: none;">View All</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- end Expiring Soon Options -->
+
+							<!-- Portfolios & Watchlists Updates  -->
+							<table class="table-full-width table-list" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-12 pb-15" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table__title" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="table__title-td__image image-reset" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; width: 26px; padding-top: 3px; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/icon-portfolios-and-watchlists-updates.png" alt="icon" width="20" height="20" style="-ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; outline: 0; text-decoration: none; width: 20px; height: 20px; vertical-align: top;"/>
+												</td>
+												<td class="table__title-td-value" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													Portfolios & Watchlists Updates
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!-- item -->
+										<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+											<tr>
+												<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+													<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																	<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																		<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																			<tr>
+																				<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">GG</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">Goldcorp</span>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+															</td>
+															<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																	<b>$127.83</b>
+																</p>
+																<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__td-list" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; border-bottom: 1px solid #ddd; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="item__list" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Position_was_added.png" alt="icon" width="24" height="24" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Position was added <span class="text-gray" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #80888E;">(30 shares at $25.00)</span></td>
+																	</tr>
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Partially_closed.png" alt="icon" width="24" height="24" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Position was partially closed <span class="text-gray" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #80888E;">(34 shares at $20.99)</span></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																18 shares in <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">portfolio test</a>, 18 shares in <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">portfolio test</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- end item -->
+
+										<!-- item -->
+										<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+											<tr>
+												<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+													<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																	<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																		<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																			<tr>
+																				<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">AAPL210312C00065000</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">AAPL $65 12Mar21 Calls</span>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+															</td>
+															<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																	<b>$55.25</b>
+																</p>
+																<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__td-list" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; border-bottom: 1px solid #ddd; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="item__list" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Contracts_were_added.png" alt="icon" width="24" height="24" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">6.45 contracts were added</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																7 contracts in <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">portfolio test</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- end item -->
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 50px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!--[if mso]>
+											<table>
+												<tr>
+													<td height="10"></td>
+												</tr>
+											</table>
+										<![endif]-->
+										<table class="button button--full-width" border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td style="font-size: 13px; border-collapse: collapse; line-height: 100%; background-color: #E5E8F4; padding-top: 15px; padding-right: 35px; padding-bottom: 15px; padding-left: 35px; text-align: center; border-radius: 10px; font-family: Verdana,'Helvetica',sans-serif;" bgcolor="#E5E8F4" align="center">
+													<a href="#" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #008CF9; text-decoration: none;">View All</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- end Portfolios & Watchlists Updates -->
+
+							<!-- Corporate Actions -->
+							<table class="table-full-width table-list" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-12 pb-15" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table__title" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="table__title-td__image image-reset" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; width: 26px; padding-top: 3px; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/icon-corporate-actions.png" alt="icon" width="20" height="20" style="-ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; outline: 0; text-decoration: none; width: 20px; height: 20px; vertical-align: top;"/>
+												</td>
+												<td class="table__title-td-value" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													Corporate Actions
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!-- item -->
+										<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+											<tr>
+												<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+													<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																	<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																		<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																			<tr>
+																				<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">AAPL</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">Apple</span>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+															</td>
+															<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																	<b>$127.83</b>
+																</p>
+																<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__td-list" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; border-bottom: 1px solid #ddd; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="item__list" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Delisted.png" alt="icon" width="24" height="24" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Apple is no longer trading as of 03/10/2021.</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																18 shares in <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">portfolio test</a>, 18 shares in <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">portfolio test</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- end item -->
+
+										<!-- item -->
+										<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+											<tr>
+												<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+													<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																	<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																		<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																			<tr>
+																				<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">CSCO</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																					<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">Cisco</span>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+															</td>
+															<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																	<b>$127.83</b>
+																</p>
+																<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__td-list" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; border-bottom: 1px solid #ddd; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="item__list" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Stock_Split.png" alt="icon" width="24" height="24" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">1:3 stock split</td>
+																	</tr>
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Spinoff_date.png" width="24" height="24" alt="icon" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Spinoff date: 09/12/2019. Shareholders of CSCO receive 0.3333 shares of CTVA.W for each share of CSCO owned.</td>
+																	</tr>
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Ex-Dividend_date.png" width="24" height="24" alt="icon" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Ex-Dividend date: 09/12/2019. Shareholders of record will be paid $X.XX per share owned. Dividend Payment date: 10/6/2019.</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																1 share in <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">xxxx0642</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- end item -->
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 50px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!--[if mso]>
+											<table>
+												<tr>
+													<td height="10"></td>
+												</tr>
+											</table>
+										<![endif]-->
+										<table class="button button--full-width" border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td style="font-size: 13px; border-collapse: collapse; line-height: 100%; background-color: #E5E8F4; padding-top: 15px; padding-right: 35px; padding-bottom: 15px; padding-left: 35px; text-align: center; border-radius: 10px; font-family: Verdana,'Helvetica',sans-serif;" bgcolor="#E5E8F4" align="center">
+													<a href="#" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #008CF9; text-decoration: none;">View All</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- end Corporate Actions -->
+
+							<!-- Strategies -->
+							<table class="table-full-width table-list" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-12 pb-15" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table__title" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="table__title-td__image image-reset" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; width: 26px; padding-top: 3px; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/icon-strategies.png" alt="icon" width="20" height="20" style="-ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; outline: 0; text-decoration: none; width: 20px; height: 20px; vertical-align: top;"/>
+												</td>
+												<td class="table__title-td-value" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													Strategies
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table-full-width table-colums" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">ABBV</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">AbbVie</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$106.79</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Met Requirements of <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Sector Selects</a> strategy.
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">FAST</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">Fastenal</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$45.69</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Met Requirements of <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Value</a> strategy.
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+											</tr>
+											<tr>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">NOW</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">ServiceNow</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$488.95</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Met Requirements of <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Dividend Growers</a> strategy.
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">VZ</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">Verizon Comm</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$56.20</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Met Requirements of <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Kinetic VQ</a> strategy.
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 50px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!--[if mso]>
+											<table>
+												<tr>
+													<td height="10"></td>
+												</tr>
+											</table>
+										<![endif]-->
+										<table class="button button--full-width" border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td style="font-size: 13px; border-collapse: collapse; line-height: 100%; background-color: #E5E8F4; padding-top: 15px; padding-right: 35px; padding-bottom: 15px; padding-left: 35px; text-align: center; border-radius: 10px; font-family: Verdana,'Helvetica',sans-serif;" bgcolor="#E5E8F4" align="center">
+													<a href="#" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #008CF9; text-decoration: none;">View All</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- end Strategies -->
+
+							<!-- My Gurus  -->
+							<table class="table-full-width table-list" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-12 pb-15" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table__title" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="table__title-td__image image-reset" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; width: 26px; padding-top: 3px; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/icon-strategies.png" alt="icon" width="20" height="20" style="-ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; outline: 0; text-decoration: none; width: 20px; height: 20px; vertical-align: top;"/>
+												</td>
+												<td class="table__title-td-value" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													My Gurus
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table-full-width table-colums" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">ABBV</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">AbbVie</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$106.79</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Was opened in Newsletters: <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Billionaires Club: Glenn Greenberg</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">FAST</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">Fastenal</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$45.69</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Was opened in Newsletters: <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Rogue Economics: The Bonner-Den</a>... <span class="text-gray" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #80888E;"> +4</span>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+											</tr>
+											<tr>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">NOW</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">ServiceNow</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$488.95</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Was opened in Newsletters: <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Billionaires Club: Bill Gates</a>... <span class="gray-text" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">+1</span>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+												<td class="column-6 td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 300px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<!-- item -->
+													<table class="table-full-width bg-white item" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+																	<tr>
+																		<td class="item__td-main vertical-top " style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<div class="item__head" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">
+																				<div class="item__head--block" style="margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; vertical-align: top; padding-right: 10px;">
+																					<table class="item__head--table" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																						<tr>
+																							<td class="item__link-main-td" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-top: 5px; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<a href="#" class="item__link-main" style="text-decoration: none; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 18px; line-height: 18px; font-weight: bold; color: #008CF9; margin: 0; padding: 0; max-width: 100%; word-break: break-word;">VZ</a>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																								<span class="item__subinfo" style="margin: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 13px; line-height: 13px; color: #80888E; padding: 1px 0 5px;">Verizon Comm</span>
+																							</td>
+																						</tr>
+																					</table>
+																				</div>
+																			</div>
+																		</td>
+																		<td class="text-right vertical-top" style="font-size: 13px; line-height: 18px; border-collapse: collapse; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif; text-align: right;" align="right" valign="top">
+																			<p class="price" style="font-size: 18px; line-height: 18px; font-weight: bold; color: #242F35; text-align: right; padding: 0; margin: 5px 0 10px;">
+																				<b>$56.20</b>
+																			</p>
+																			<p class="price-value" style="margin: 0; display: block; font-size: 13px; line-height: 13px; color: #80888E; text-align: right; padding: 1px 0 10px;">Latest Close</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="item__footer" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 20px; padding-top: 6px; color: #242F35; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																			Was opened in Newsletters: <a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;">Fat Tail Media: Catalyst Trader</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- end item -->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 50px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!--[if mso]>
+											<table>
+												<tr>
+													<td height="10"></td>
+												</tr>
+											</table>
+										<![endif]-->
+										<table class="button button--full-width" border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; border-radius: 10px; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td style="font-size: 13px; border-collapse: collapse; line-height: 100%; background-color: #E5E8F4; padding-top: 15px; padding-right: 35px; padding-bottom: 15px; padding-left: 35px; text-align: center; border-radius: 10px; font-family: Verdana,'Helvetica',sans-serif;" bgcolor="#E5E8F4" align="center">
+													<a href="#" style="margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #008CF9; text-decoration: none;">View All</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- end My Gurus -->
+
+							<!-- Billionaires Club Portfolio Update -->
+							<table class="table-full-width table-list" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-12 pb-15" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 15px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table__title" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="table__title-td__image image-reset" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; width: 26px; padding-top: 3px; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/icon-billionaires-club.png" alt="icon" width="20" height="20" style="-ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; outline: 0; text-decoration: none; width: 20px; height: 20px; vertical-align: top;"/>
+												</td>
+												<td class="table__title-td-value" style="border-collapse: collapse; text-align: left; font-size: 17px; line-height: 25px; color: #242F35; font-weight: bold; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+													Billionaires Club Portfolio Update
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-left: 5px; padding-right: 5px; width: 600px; padding-bottom: 50px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<!-- item -->
+										<table class="table-full-width bg-white item item-last" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0 0 15px; border-radius: 10px; margin-bottom: 0; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+											<tr>
+												<td class="no-padding-bottom" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 10px 20px 15px; padding-bottom: 0; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+													<table class="table-full-width bg-white item__inner" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #fff;" bgcolor="#fff">
+														<tr>
+															<td colspan="2" class="item__td-list no-border" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; border-bottom: 1px solid #ddd; border: none; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+																<table class="item__list" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+																	<tr>
+																		<td class="item__list--td-icon image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding: 0; width: 34px; vertical-align: top; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+																			<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Billionaires_Club_Portfolio_Update.png" width="24" height="24" alt="icon" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 24px; height: 24px;"/>
+																		</td>
+																		<td class="item__list--td-data" style="border-collapse: collapse; text-align: left; font-size: 13px; line-height: 16px; color: #242F35; padding: 4px 0 16px; font-family: Verdana,'Helvetica',sans-serif;" align="left">Q1 2021 13F holdings data for
+																			<a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;"><b>Andreas Halvorsen</b></a>,
+																			<a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;"><b>Arnold Van Den Berg</b></a>,
+																			<a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;"><b>Bill Gates</b></a>,
+																			<a href="#" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;"><b>David Einhorn</b></a> is now available in the Platform.</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- end item -->
+									</td>
+								</tr>
+							</table>
+							<!-- end Billionaires Club Portfolio Update -->
+						</td>
+					</tr>
+				</table><!-- /.container main-body -->
+			</td><!-- /.main-wrapper__inner -->
+		</tr>
+		<tr>
+			<td class="main-wrapper__inner image-reset" align="left" valign="left" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding-top: 0; padding-bottom: 0; font-family: Verdana,'Helvetica',sans-serif;">
+				<table class="container bg-black text-grey-2" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 600px; margin: 0 auto 0 auto; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif; background-color: #242F35; color: #DDDDE3;" bgcolor="#242F35">
+					<tr>
+						<td class="main-td-footer" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding: 20px 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+							<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+								<tr>
+									<td class="column-10 is-first td-adaptive" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-right: 5px; width: 500px; padding-left: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<div class="footer__item" style="padding: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 12px; line-height: 15px; margin: 0 0 20px;">
+											<div class="footer__title" style="padding: 0; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 13px; line-height: 18px; font-weight: bold; text-transform: uppercase; margin: 0 0 10px;">Service representative</div>
+											Toll free: (866) 385-2076  |  Local: (352)-593-2267
+											<br/>
+											Hours: Monday - Friday 9 am - 5 pm (Eastern) <a href="mailto:support@tradesmith.com" class="text-blue" style="text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #008CF9;">support@tradesmith.com</a>
+										</div>
+										<div class="footer__item" style="padding: 0; border: 0; font: inherit; vertical-align: baseline; display: block; width: 100%; font-size: 12px; line-height: 15px; margin: 0 0 20px;">
+											<div class="footer__title" style="padding: 0; border: 0; font: inherit; vertical-align: baseline; display: block; font-size: 13px; line-height: 18px; font-weight: bold; text-transform: uppercase; margin: 0 0 10px;">SALES representative</div>
+											Toll free: (866) 220-1107
+											<br/>
+											Hours: Monday - Friday 9 am - 6 pm (Eastern)
+										</div>
+									</td>
+									<td class="column-2 is-last vertical-top td-adaptive image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding-left: 5px; width: 100px; vertical-align: top; padding-right: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="top">
+										<table class="table__store-link" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="image-reset" style="border-collapse: collapse; font-size: 100%; line-height: 100%; text-align: right; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="right">
+													<a href="#" class="store-link" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; width: 135px; height: 40px; vertical-align: baseline;">
+														<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Appstore.png" alt="Appstore" width="135" height="40" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; font: inherit; border: none; display: block; width: 135px; height: 40px; vertical-align: baseline;"/>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="image-reset" style="border-collapse: collapse; font-size: 100%; line-height: 100%; text-align: right; padding-bottom: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="right">
+													<a href="#" class="store-link" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; display: inline-block; width: 135px; height: 40px; vertical-align: baseline;">
+														<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/Google_Play.png" alt="Google Play" width="135" height="40" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; font: inherit; border: none; display: block; width: 135px; height: 40px; vertical-align: baseline;"/>
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="column-12 is-first is-last td-adaptive image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; width: 600px; padding-left: 10px; padding-right: 10px; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table class="table-social" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding-right: 25px; height: 18px; width: 18px; vertical-align: middle; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="middle">
+													<a href="#" class="social-link" target="_black" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; display: inline-block; width: 18px; height: 18px;">
+														<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/facebook.png" alt="facebook" width="18" height="18" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; font: inherit; vertical-align: baseline; border: none; display: block; width: 18px; height: 18px;"/>
+													</a>
+												</td>
+												<td class="image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding-right: 25px; height: 18px; width: 18px; vertical-align: middle; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="middle">
+													<a href="#" class="social-link" target="_black" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; display: inline-block; width: 18px; height: 18px;">
+														<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/youtube.png" alt="youtube" width="18" height="18" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; font: inherit; vertical-align: baseline; border: none; display: block; width: 18px; height: 18px;"/>
+													</a>
+												</td>
+												<td class="image-reset" style="border-collapse: collapse; text-align: left; font-size: 100%; line-height: 100%; padding-right: 25px; height: 18px; width: 18px; vertical-align: middle; font-family: Verdana,'Helvetica',sans-serif;" align="left" valign="middle">
+													<a href="#" class="social-link" target="_black" style="color: #008CF9; text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; display: inline-block; width: 18px; height: 18px;">
+														<img src="https://dev1.content.tradesmith.com/includes/images/notification_reports/twitter.png" alt="twitter" width="18" height="18" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; padding: 0; font: inherit; vertical-align: baseline; border: none; display: block; width: 18px; height: 18px;"/>
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-12 is-first is-last main-td-footer-bottom" colspan="2" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; width: 600px; padding-left: 10px; padding-right: 10px; padding-top: 20px; margin: 0; font-family: Verdana,'Helvetica',sans-serif;" align="left">
+										<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: Verdana,'Helvetica',sans-serif;">
+											<tr>
+												<td class="column-8 is-first footer-bot" style="font-size: 13px; line-height: 18px; border-collapse: collapse; text-align: left; padding-right: 5px; width: 400px; vertical-align: middle; font-family: Verdana,'Helvetica',sans-serif; padding-left: 0;" align="left" valign="middle">
+													<p class="footer__item no-padding-bottom" style="display: block; width: 100%; font-size: 12px; line-height: 15px; padding-bottom: 0; margin: 0;">
+														<a href="#" class="text-grey-2" style="text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #DDDDE3;">Terms of Services</a>  | <a href="#" class="text-grey-2" style="text-decoration: none; margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; color: #DDDDE3;">Privacy Policy</a>
+													</p>
+												</td>
+												<td class="column-4 is-last text-right footer-bot" style="font-size: 13px; line-height: 18px; border-collapse: collapse; padding-left: 5px; width: 200px; vertical-align: middle; font-family: Verdana,'Helvetica',sans-serif; text-align: right; padding-right: 0;" align="right" valign="middle">
+													<p class="footer__item no-padding-bottom" style="display: block; width: 100%; font-size: 12px; line-height: 15px; padding-bottom: 0; margin: 0;">
+														© 2021 TradeSmith.
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table> <!-- container main footer  -->
+			</td>
+		</tr>
+	</table><!-- /.main-wrapper -->
+	</body>
+</html>
